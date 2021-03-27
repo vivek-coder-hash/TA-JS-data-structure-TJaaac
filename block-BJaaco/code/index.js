@@ -89,9 +89,14 @@ times(5)
     revert(['Ryan', 'John', 'Bran']); //['Bran', 'John', 'Ryan']
 */
 
-function revert() {
-  // your code
+function revert(array) {
+  let final =[]
+  for (i=array.length-1 ; i>=0  ;i--) {
+       final.push(array[i])
+  }
+  console.log(final)
 }
+revert([1, 2, 3, 4])
 
 // Uncomment the code below and test the output
 // console.log(revert([1, 2, 3, 4])); // [4, 3, 2, 1]
@@ -112,10 +117,17 @@ function revert() {
 */
 
 function clear(array) {
+  let final =[]
   for (i=0 ; i<array.length ;i++) {
-    if (array[i] == "false" || )
+    if (array[i]) {
+      final.push(array[i])
+      
+    }
   }
+  console.log(final)
 }
+
+clear(['Ryan', null, 0,  'John', 'Bran']);
 
 // Uncomment the code below and test the output
 // console.log(clear([1, 2, 3, 4, '', 0, null, undefined])); // [4, 3, 2, 1]
@@ -136,10 +148,14 @@ function clear(array) {
     arrayToObj(['Ryan', 'John']); // {0: 'Ryan', 1: 'John'}
 */
 
-function arrayToObj() {
-  // your code
+function arrayToObj(array) {
+  let final ={}
+  for (i=0 ; i<array.length ;i++) {
+    final[i] = array[i]
+  }
+  console.log(final)
 }
-
+arrayToObj([1, 2, 3, 4])
 // Uncomment the code below and test the output
 // console.log(arrayToObj([1, 2, 3, 4])); // {0: 1, 1: 2, 2: 3, 3: 4}
 // console.log(arrayToObj(['a', undefined, 'd'])); // {0: 'a', 1: undefined, 2: 'd'}
