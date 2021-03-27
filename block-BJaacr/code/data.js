@@ -72,3 +72,6 @@ const got = {
     },
   ],
 };
+
+
+console.log(got.houses)

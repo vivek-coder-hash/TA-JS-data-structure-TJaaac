@@ -19,6 +19,7 @@ Hint: (Structure of got variable)
 */
 
 // 1. Log the value of key "houses"
+console.log(ho)
 
 // 2. Log the length of the "houses" key
 
