@@ -18,18 +18,18 @@ let newUser = user;
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // true  because both pointing towards same memory address. 
+- `user === newUser;`  // True  , both are of same data types.
+- `user.name === newUser.name;` // true ,  both are of same data types.
+- `user.name == newUser.name;`// true , because both pointing towards same memory address.
+- `user.sibling == newUser.sibling;` // true , because both pointing towards same memory address.
+- `user.sibling === newUser.sibling;`  // true ,  both are of same data types.
+- `user.sibling == allBrothers;` // false , both have different memory addresses.
+- `user.sibling === allBrothers;`//  false 
+- `brothersCopy === allBrothers;`// false , both have different memory address.
+- `brothersCopy == allBrothers;` /// false , both have different memory address.
+- `brothersCopy == user.sibling;` // true , both have same memory address.
+- `brothersCopy === user.sibling;` // true , same type of data.
+- `brothersCopy[0] === user.sibling[0];` // true
+- `brothersCopy[1] === user.sibling[1];` // true
+- `user.sibling[1] === newUser.sibling[1];` // true  because both pointing towards same memory address. 
